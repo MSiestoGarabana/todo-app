@@ -3,3 +3,10 @@ export interface Todo{
     desc: string;
     completed: boolean;
 }
+
+export interface TodoState {
+    todoCount: number;
+    todos: Todo[],
+    completed: number;
+    pending: number;
+}
