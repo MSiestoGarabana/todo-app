@@ -1,10 +1,11 @@
+import { TodoState } from "../interfaces/interfaces"
 import { TodoContext } from "./TodoContext"
 
-const INITIAL_STATE = {
+const INITIAL_STATE: TodoState = {
     todoCount: 2,
     todos: [
 
-        
+
     ],
     completed: 0,
     pending: 2
