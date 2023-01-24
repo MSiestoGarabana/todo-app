@@ -4,8 +4,16 @@ import { TodoContext } from "./TodoContext"
 const INITIAL_STATE: TodoState = {
     todoCount: 2,
     todos: [
-
-
+        {
+            id: '1',
+            desc: 'Recolectar las piedras del infinito',
+            completed: false
+        },
+        {
+            id: '2',
+            desc: 'Piedra del alma',
+            completed: false
+        },
     ],
     completed: 0,
     pending: 2
@@ -16,6 +24,9 @@ interface props {
 }
 
 export const TodoProvider = ({ children}: props) => {
+
+   
+
   return (
     <TodoContext.Provider value={{}}>
         { children }
